@@ -1,0 +1,58 @@
+html, body {
+    background-color: black;;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    min-height: 900px;
+    min-width: 650px;
+}
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.grid-page {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 65px 60px 60px 300px 300px;
+    row-gap: 5px;
+    grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b b b b"
+    "c c c c c c c c c c c c"
+    "d d d d d d d d d d d d"
+    "f f f f f f f f f f f f";
+    color: white;
+    background-image: url(../res/lock/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-page > .header {
+    grid-area: a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.dtime {
+    grid-area: b;
+    font-size: 60px;
+    text-align: center;
+}
+.dinfo {
+    grid-area: c;
+    font-size: 25px;
+    text-align: center;
+}
+#carrierr
+{
+    cursor: pointer;
+}
+
+#batteryy
+{
+    cursor: pointer;
+}

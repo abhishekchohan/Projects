@@ -1,0 +1,39 @@
+.left
+{
+    display: block;
+    float: left; 
+    width: 48.59%; 
+    border: 1px solid black;
+    min-height: 590px;
+    padding: 0px 5px 0px 5px;
+    overflow:hidden;
+    position: relative;
+}
+
+.right
+{ 
+    display: block;
+    float: right; 
+    width: 48.59%; 
+    border: 1px solid black;
+    min-height: 590px;
+    padding: 0px 5px 0px 5px;
+    overflow:hidden;
+    position: relative;
+}
+
+table
+{
+    margin: 75px auto;
+    border: 1px solid gray;
+}
+
+th,td
+{
+    border: 1px solid gray;
+}
+
+iframe
+{
+    margin: 100px auto;
+}

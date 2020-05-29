@@ -1,0 +1,31 @@
+.oath
+{
+    display: block;
+    width: 75%;
+    margin: auto;
+    font-size: 25px;
+    padding: 20px 20px 20px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 25px;
+    overflow: auto;
+}
+
+h3
+{
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px 20px 20px 20px;
+    font-size: 35px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+a
+{
+    text-decoration:underline;
+    color:#43A047;
+}

@@ -1,0 +1,219 @@
+/*
+
+This is the main CSS file That will style the conatiner and outer layout of whole site.
+
+*/
+
+body
+{
+    background-image: url(../media/main.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container
+{
+    width: 75%;
+    min-width: 1000px;
+    min-height: 600px;
+    height: auto;
+    margin: 50px auto;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    box-shadow: 0px 0px 100px 5px #000000;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+}
+
+#middle
+{
+    position: relative;
+    width: 85%;
+    margin: auto;
+    min-height: 625px;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+#bottom
+{
+    display: block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    margin-left: -20px;
+    margin-bottom: -10px;
+}
+
+
+#top
+{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+}
+#mainlogo
+{
+    padding: 10px 10px 10px 10px;
+}
+#logo
+{
+    float: left;
+    padding: 2px 10px 10px;
+}
+
+
+#top ul
+{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#top ul li
+{
+    position: relative;
+    float: left;
+    display: inline-block;
+    color: #43A047;
+    height: 30px;
+    width: auto;
+    padding: 10px 10px 0px 10px;
+    margin-top: 6.5px;
+}
+
+#top ul li ul
+{
+    position: absolute;
+    display: none;
+}
+
+#top ul li:hover ul 
+{
+    display: block;
+    background-color: black;
+}
+
+#top ul li:hover
+{
+    background-color: #424242;
+    transition: all 0.9s ease;
+    color: #43A047;
+}
+
+#top ul li:hover ul li
+{
+    display: block;
+    color: white;
+    height: 20px;
+    margin-right: -10px;
+    left: 0;
+    top: 100%;
+}
+
+#top ul li ul li:hover ul
+{
+    display: block;
+    background-color: black;
+}
+
+#top ul li ul li:hover ul li
+{
+    display: block;
+    color: white;
+    height: 20px;
+    margin-right: -10px;
+    left: 0;
+    top: 100%;
+}
+
+#top ul li span
+{
+    display: block;
+    float: right;
+}
+
+.input
+{
+    border-radius: 15px;
+    outline: none;
+}
+
+.input:hover
+{
+    border-color: #43A047;
+    transition: all 0.9s ease;
+}
+
+.input:focus
+{
+    border-color: #43A047;
+    transition: all 0.9s ease;
+}
+
+.button
+{
+    background-color: black;
+    border-color: white;
+    color: white;
+    border: 1px solid;
+    outline: none;
+}
+
+.button:hover
+{
+    background-color: #424242;
+    transition: all 0.9s ease;
+    color: #43A047; 
+}
+
+#side
+{
+    float: right;
+    padding: 5px 15px 5px 15px;
+    position: relative;
+}
+
+li a
+{
+    text-decoration: none;
+    display: block;
+    height: inherit;
+    color: white;
+}
+
+li a:hover
+{
+    color: #43A047;
+}
+
+#active
+{
+    color: #43A047;
+}
+
+.active
+{
+    color: #43A047;
+}
+
+
+.sub
+{
+    background-color: black;
+    transition: all 0.9s ease;
+    color: #43A047;
+}
+
+.sub:hover
+{
+    background-color: #424242;
+    transition: all 0.9s ease;
+    color: #43A047;
+}

@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/notify.css">
+        <link rel="stylesheet" href="./css/control.css">
+        <script src="./js/lock_time.js"></script>
+        <script src="./js/batt_carr_input.js"></script>
+        <script src="./js/clear_anim.js"></script>
+    </head>
+    <body onload="gettime(),ask()">
+        <div class="grid-page">
+            <div class="header">
+                <div class="left"><img id="signal" height="15" src="./res/lock/signal.png" /> <span id="carrierr" onclick="ask('c')" >Koodo</span> <img src="./res/lock/wifi.png" height="18"/></div>
+                <div class="center"><img id="lock" src="./res/lock/lock.png" height="15" /></div>
+                <div class="right" onclick="ask('b')"><span id="batteryy">100</span>% <img id="battery_img" src="./res/lock/battery.png" height="15" /></div>
+            </div>
+            <div class="dtime" ><p id="displaytime"></p></div>
+            <div class="dinfo" ><p id="info"></p></div>
+            <div class="music-player">
+                <div class="mp-main">
+                    <div class="mp-song-info">
+                        <div class="mp-img">
+                            <img src="./res/audio/thumb.jpg" height="100" width="100">
+                        </div>
+                        <div class="mp-name" id="mp_name" >Techii by Garry Sandhu (Mr-Jatt.com) songs</div>
+                        <div class="mp-out"><img class="btn" onclick="musicfileSelect()"  src="./res/audio/out.png" height="100" width="100"></div>
+                    </div>
+                    <div class="mp-controls">
+                        <div class="seek"><input onchange="seek()" id="seek" type="range" min="0" value="0" max="100"/></div>
+                        <div class="audiotime"><span id="curtimepos">-</span><span id="timeleft">-</span></div>
+                        <div class="buttons"><img class="btn" src="./res/audio/prev.png" height="75" width="75"><img id="playPause" class="btn" onclick="play()" src="./res/audio/play.png" height="75" width="75"><img class="btn" src="./res/audio/next.png" height="75" width="75"></div>
+                        <div class="volume"><img class="vol" src="./res/audio/vol.png" height="35" width="35"><input id="vol" onchange="volume()" type="range" step="0.01" min="0.0" value="0.5" max="1.0"/><img class="vol" src="./res/audio/vol2.png" height="35" width="35"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="notify" id="notify">
+                <span id="nc"><b>&nbsp;&nbsp;Notification Centre</b></span><div id="clear" class="clear" onclick="clearnoti()">x</div><br>
+                <div class="noti">
+                    <div class="noti-c1">
+                        <div class="noti-icon"><img src="./res/lock/mms.png" height="20"></div>
+                        <div class="noti-name">Messages</div>
+                        <div class="noti-time">56s ago </div>
+                    </div>
+                    <div class="noti-c2">
+                        <div class="noti-head">Pro Tip</div>
+                        <div class="noti-text">Try Changing Carrier name or Batery percentage.</div>
+                    </div>
+                </div>
+                <div class="noti">
+                    <div class="noti-c1">
+                        <div class="noti-icon"><img src="./res/lock/mms.png" height="20"></div>
+                        <div class="noti-name">Messages</div>
+                        <div class="noti-time">11m ago</div>
+                    </div>
+                    <div class="noti-c2">
+                        <div class="noti-head">Another Tip</div>
+                        <div class="noti-text">Play song, change volume or seekbar. next/prev not implemented yet</div>
+                    </div>
+                </div>
+                <div class="noti">
+                    <div class="noti-c1">
+                        <div class="noti-icon"><img src="./res/lock/mms.png" height="20"></div>
+                        <div class="noti-name">Messages</div>
+                        <div class="noti-time">1hr ago</div>
+                    </div>
+                    <div class="noti-c2">
+                        <div class="noti-head">One last Tip</div>
+                        <div class="noti-text">Try using the clear notification button</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" id="foot"><form id="upload" method="post"></form><audio id="audio" src="./res/audio/techi.mp3"></audio></div></div><form>
+        </div>
+    </body>
+</html>

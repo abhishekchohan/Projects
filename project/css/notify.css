@@ -1,0 +1,116 @@
+/*
+Notification Center css
+
+heirarichy of css classes-->
+
+notify (main conatiner)
+~clear
+~noti (column flex with two child c1 & c2)
+    ~noti-c1    (column flex child of noti & row flex parent of 3 items)
+        ~noti-icon  ~noti-name  ~noti-text (row flex - 3 row items(child) of c1
+
+    ~noti-c2    (column flex child of noti & column flex parent of 2 items)
+        ~noti-head
+        ~noti-text
+
+
+*/
+
+.notify {
+    grid-area: f;
+    font-size: 25px;
+}
+
+.clear
+{
+    float: right;
+    margin: 0 25px 0 0;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: rgb(237, 237, 237, 0.5);
+}
+
+.noti
+{
+    background-color: rgb(237, 237, 237, 0.5);
+    height: 96px;
+    border-radius: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 17px;
+    width: fill;
+    color: #212121;
+}
+
+/* ````````````````````````````
+``````````````````````````````
+Noti-c1 & its 3 childs
+````````````````````````
+`````````````````````````
+*/
+
+.noti-c1
+{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: fill;
+}
+
+.noti-icon
+{
+    margin: 7px 0 0 7px;
+    height: 20px;
+    width: 2.5%;
+    text-align: right;
+}
+.noti-name
+{
+    margin: 8.5px 0 0 12.5px;
+    text-transform: uppercase;
+    height: 20px;
+    width: 30%;
+    text-align: left;
+}
+.noti-time
+{
+    margin: 8.5px 15px 0 0;
+    height: 20px;
+    width: 68.5%;
+    text-align: right;
+}
+
+/* ````````````````````````````
+``````````````````````````````
+Noti-c2 & its 2 childs
+````````````````````````
+`````````````````````````
+*/
+
+.noti-c2
+{
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: fill;
+}
+
+.noti-head
+{
+    height: 28px;
+    font-size: 20px;
+    margin: 0 0 0 12.5px;
+    font-weight: 550;
+}
+
+.noti-text
+{
+    height: 20px;
+    font-size: 17px;
+    margin: 0 0 0 12.5px;
+}
